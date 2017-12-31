@@ -1,3 +1,5 @@
+Immutable Items
+---------------
 **alpha software**
 
-Use at your own risk
+`yarn add immutable-items`
