@@ -9,6 +9,7 @@
   "author": "Jared Lunde",
   "license": "MIT",
   "private": false,
+  "sideEffects": false,
   "peerDependencies": {
     "immutable": "^3.8.2",
     "prop-types": "^15.6.0",
