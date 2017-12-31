@@ -1,0 +1,103 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        "@babel/preset-react",
+        [
+          "@babel/preset-env", {
+            "debug": true,
+            "modules": false,
+            "useBuiltIns": "usage",
+            "targets": {
+              "browsers": "defaults"
+            }
+          }
+        ],
+        "@babel/preset-stage-0"
+      ],
+      "plugins": [
+        "transform-react-pure-components",
+        "transform-react-remove-prop-types"
+      ]
+    },
+    "commonjs": {
+      "presets": [
+        "@babel/preset-react",
+        [
+          "@babel/preset-env", {
+            "debug": true,
+            "loose": true,
+            "useBuiltIns": "usage",
+            "targets": {
+              "browsers": "defaults"
+            },
+            "modules": "commonjs"
+          }
+        ],
+        "@babel/preset-stage-0"
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "transform-react-pure-components",
+        "transform-react-remove-prop-types"
+      ]
+    },
+    "es": {
+      "presets": [
+        "@babel/preset-react",
+        [
+          "@babel/preset-env", {
+            "debug": true,
+            "modules": false,
+            "useBuiltIns": "usage"
+          }
+        ],
+        "@babel/preset-stage-0"
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "transform-react-pure-components",
+        "transform-react-remove-prop-types"
+      ]
+    },
+    "development": {
+      "presets": [
+        "@babel/preset-react",
+        [
+          "@babel/preset-env", {
+            "debug": false,
+            "modules": false,
+            "useBuiltIns": "usage",
+            "targets": {
+              "browsers": ["chrome >= 56"]
+            }
+          }
+        ],
+        "@babel/preset-stage-0"
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "transform-react-pure-components",
+        "transform-react-remove-prop-types"
+      ]
+    },
+    "cli": {
+      "presets": [
+        "@babel/preset-react",
+        [
+          "@babel/preset-env", {
+            "debug": true,
+            "modules": false,
+            "useBuiltIns": "usage"
+          }
+        ],
+        "@babel/preset-stage-0"
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        "transform-react-pure-components",
+        "transform-react-remove-prop-types"
+      ]
+    }
+  }
+}
